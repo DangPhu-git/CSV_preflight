@@ -1,4 +1,4 @@
-import Papa from 'papaparse';
+import * as Papa from 'papaparse';
 import type { CsvDataset, CsvDocument } from '../../domain/csv';
 
 /**
