@@ -1,5 +1,5 @@
 // src/domain/fix.ts
-import { CsvDataset } from "./csv";
+import type { CsvDataset } from "./csv";
 
 export interface FixSelection {
   removeEmptyRows: boolean;
