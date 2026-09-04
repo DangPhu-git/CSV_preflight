@@ -11,6 +11,7 @@ export function parseCsv(file: File): Promise<CsvDocument> {
       header: false, // Trả về mảng 2 chiều string[][] thay vì JSON object
       skipEmptyLines: false, // Phải giữ lại để (EmptyRowsAnalyzer) phát hiện lỗi
       worker: false, // Sẽ được wrap bằng Browser Web Worker ở layer cao hơn
+      comments: '#', // Bỏ qua các dòng comment bắt đầu bằng #
       
       complete: (results) => {
         const data = results.data;

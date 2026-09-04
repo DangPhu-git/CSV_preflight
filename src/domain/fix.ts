@@ -10,6 +10,8 @@ export interface FixSelection {
   // P1 features
   removeEmptyColumns?: boolean;
   normalizeDates?: boolean;
+
+  customHeaderMap?: Record<string, string>
 }
 
 export interface ChangeSummary {

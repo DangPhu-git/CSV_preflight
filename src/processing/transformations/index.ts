@@ -34,7 +34,7 @@ export function applyTransformations(original: CsvDataset, selection: FixSelecti
   }
 
   if (selection.normalizeHeaders) {
-    const result = normalizeHeaders(currentDataset);
+    const result = normalizeHeaders(currentDataset, selection.customHeaderMap);    
     currentDataset = result.dataset;
     changes.headersNormalized += result.normalizedCount;
   }
