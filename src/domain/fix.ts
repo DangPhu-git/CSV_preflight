@@ -1,5 +1,5 @@
 // src/domain/fix.ts
-import { CsvDataset } from "./csv";
+import type { CsvDataset } from "./csv";
 
 export interface FixSelection {
   removeEmptyRows: boolean;
@@ -10,6 +10,8 @@ export interface FixSelection {
   // P1 features
   removeEmptyColumns?: boolean;
   normalizeDates?: boolean;
+
+  customHeaderMap?: Record<string, string>
 }
 
 export interface ChangeSummary {
